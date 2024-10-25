@@ -1,0 +1,135 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin: 2rem 0 0 0;
+}
+
+.cards__title {
+  color: #0091ff;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.cards__overview {
+  background-color: #ffffff;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  padding: 1.75rem 1.5rem;
+
+  width: 100%;
+}
+
+.cards__title-card {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.cards__list {
+  display: grid;
+  gap: .5rem;
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  flex: 1;
+
+  padding: 1rem;
+}
+
+.cards__item i {
+  align-self: center;
+
+  border-radius: .5rem;
+
+  font-size: 1.5rem;
+
+  width: min-content;
+
+  padding: .5rem;
+}
+
+.cards__item .ph-shopping-cart-simple {
+  background-color: #0091ff31;
+  color: #0091ff;
+}
+
+.cards__item .ph-currency-dollar-simple {
+  background-color: #00ff9131;
+  color: #017844;
+}
+
+.cards__item .ph-coins {
+  background-color: #f6ff004f;
+  color: #949900;
+}
+
+.cards__item .ph-package {
+  background-color: #FFEEDB;
+  color: #DBA362;
+}
+
+.cards__item .ph-x-circle {
+  background-color: #f0443845;
+  color: #F04438;
+}
+
+.cards__item .ph-chart-line-up {
+  background-color: #807af347;
+  color: #817AF3;
+}
+
+
+.cards__metrics {
+  display: flex;
+  justify-content: space-between;
+  font-size: .875rem;
+}
+
+.cards__metric {
+  font-weight: 600;
+}
+
+.cards__title-metric {
+  color: #667085;
+}
+
+@media (min-width: 425px) {
+  .cards__list {
+    grid-template-areas:
+      "1 2"
+      "3 4";
+  }
+
+  .cards__iten:nth-child(1) {
+    grid-area: "1"
+  }
+
+  .cards__iten:nth-child(2) {
+    grid-area: "2"
+  }
+
+  .cards__iten:nth-child(3) {
+    grid-area: "3"
+  }
+
+  .cards__iten:nth-child(4) {
+    grid-area: "4"
+  }
+}
+
+@media (min-width: 768px) {
+  .cards__list {
+    grid-template-areas:
+      "1 2 3 4";
+  }
+}

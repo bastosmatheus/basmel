@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 2rem 0 2rem;
+}
+
+.header i {
+  background-color: #0091ff;
+  border-radius: .5rem;
+  color: #ffffff;
+
+  font-size: 1.25rem;
+
+  padding: .5rem;
+}
+
+.header__text {
+  color: #0091ff;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+}
